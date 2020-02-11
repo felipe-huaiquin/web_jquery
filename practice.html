@@ -14,6 +14,33 @@
                     $('.function_2').click(function(){
                         $('.function2').hide();
                     });
+                    $('.function_3').click(function(){
+                        $('.function2').show();
+                    });
+                    $('.function_4').click(function(){
+                        $('.function4').slideUp();
+                        $('.function4').slideDown();
+                    });
+                    $('.function_5').click(function(){
+                        $('.function5').slideToggle();
+                    });
+                    $('.function_6').click(function(){
+                        $('.function6').fadeOut();
+                        $('.function6').fadeIn();
+                    });
+                    $('.function_7').click(function(){
+                        $('.hero, .button').addClass('is-primary');
+                    });
+                    $('.function_8').click(function(){
+                        $('.function8').before("<p>Hello</p>")
+                        $('.function8').after("<p>Modafucka</p>")
+                    });
+                    $('.function_9').click(function(){
+                        $('.function9').append("<strong>IT WORKED</strong>");
+                    });
+                    $('.function_10').click(function(){
+                        $('body').html("<body><h1>HELLO MODAFUCKA</h1></body>");
+                    });
             });
         </script>
         <title>jQuery</title>
@@ -83,116 +110,131 @@
             <div class="hero-body">
               <div class="container">
                 <h1 class="title">
-                  Primary title
+                  Funciones jQuery
                 </h1>
                 <h2 class="subtitle">
-                  Primary subtitle
+                  Aún falta implementar attr, val, text.
                 </h2>
               </div>
             </div>
-          </section>
-            <div class="container is-fullhd box1-4">
-                <div class="notification">
-                    <div class="columns">
-                        <div class="column">
-                            <div class="box">
-                                <div class="content">
-                                    <h3 class="title is-3">Function 1: Click+Toggle</h3>
-                                    <p class="function1">When you click the button, it toggles this description on and off.</p>
-                                    <button class="button is-dark function_1">Dark</button>
-                                </div>
+        </section>
+        <div class="container is-fullhd box1-4">
+            <div class="notification">
+                <div class="columns">
+                    <div class="column is-flex">
+                        <div class="box">
+                            <div class="content">
+                                <h3 class="title is-3">Function 1: Click+Toggle</h3>
+                                <p class="function1">When you click the button, it toggles this description on and off.</p>
+                                <button class="button is-dark function_1">Dark</button>
                             </div>
                         </div>
-                        <div class="column">
-                            <div class="box">
-                                <div class="content">
-                                    <h3 class="title is-3">Function 2: Click+Hide/Show</h3>
-                                    <p class="function2">When you click the button, it toggles this description on and off.</p>
-                                    <button class="button is-dark function_2">Dark</button>
-                                </div>
+                    </div>
+                    <div class="column is-flex">
+                        <div class="box">
+                            <div class="content">
+                                <h3 class="title is-3">Function 2: Click+Hide</h3>
+                                <p class="function2">When you click the button, it hides this description.</p>
+                                <button class="button is-dark function_2">Dark</button>
                             </div>
                         </div>
-                        <div class="column">
-                            <div class="box">
-                                <div class="content">
-                                    <p>
-                                    <strong>Function 1</strong>
-                                    <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                    </p>
-                                    <button class="button is-dark">Dark</button>
-                                </div>
+                    </div>
+                    <div class="column is-flex">
+                        <div class="box">
+                            <div class="content">
+                                <h3 class="title is-3">Function 3: Click+Show</h3>
+                                <p class="function3">When you click the button, it shows the description of Formula 2.</p>
+                                <button class="button is-dark function_3">Dark</button>
                             </div>
                         </div>
-                        <div class="column">
-                            <div class="box box_f1">
-                                <div class="content">
-                                    <p>
-                                    <strong>Function 1</strong>
-                                    <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                    </p>
-                                    <button class="button is-dark">Dark</button>
-                                </div>
+                    </div>
+                    <div class="column">
+                        <div class="box box_f1">
+                            <div class="content">
+                                <h3 class="title is-3">Function 4: Click+SlideUpDown</h3>
+                                <p class="function4">When you click the button, it slides first slides up and then slides down simultaneusly, showing the clusterfuck you see now.</p>
+                                <button class="button is-dark function_4">Dark</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container is-fullhd box5-8">
-                <div class="notification">
-                    <div class="columns">
-                        <div class="column">
-                            <div class="box">
-                                <div class="content">
-                                    <p>
-                                    <strong>Function 1</strong>
-                                    <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                    </p>
-                                    <button class="button is-dark">Function 1</button>
-                                </div>
+        </div>
+        <div class="container is-fullhd box5-8">
+            <div class="notification">
+                <div class="columns">
+                    <div class="column is-flex">
+                        <div class="box">
+                            <div class="content">
+                                <h3 class="title is-3">Function 5: Click+SlideToggle</h3>
+                                <p class="function5">When you click the button, it hides/shows in a toggle function in a cooler motion than Function 1 .</p>
+                                <button class="button is-dark function_5">Dark</button>
                             </div>
                         </div>
-                        <div class="column">
-                            <div class="box">
-                                <div class="content">
-                                    <p>
-                                    <strong>Function 1</strong>
-                                    <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                    </p>
-                                    <button class="button is-dark">Dark</button>
-                                </div>
+                    </div>
+                    <div class="column is-flex">
+                        <div class="box">
+                            <div class="content">
+                                <h3 class="title is-3">Function 6: Click+fadeInOut</h3>
+                                <p class="function6">When you click the button, it fades out then in, the description showing a clusterfuck as in Function 5.</p>
+                                <button class="button is-dark function_6">Dark</button>
                             </div>
                         </div>
-                        <div class="column">
-                            <div class="box">
-                                <div class="content">
-                                    <p>
-                                    <strong>Function 1</strong>
-                                    <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                    </p>
-                                    <button class="button is-dark">Dark</button>
-                                </div>
+                    </div>
+                    <div class="column is-flex">
+                        <div class="box">
+                            <div class="content">
+                                <h3 class="title is-3">Function 7: Click+AddClass</h3>
+                                <p class="function7">When you click the button, it change the site mode to primary.</p>
+                                <button class="button is-dark function_7">Dark</button>
                             </div>
                         </div>
-                        <div class="column">
-                            <div class="box">
-                                <div class="content">
-                                    <p>
-                                    <strong>Function 1</strong>
-                                    <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                    </p>
-                                    <button class="button is-dark">Dark</button>
-                                </div>
+                    </div>
+                    <div class="column is-flex">
+                        <div class="box">
+                            <div class="content">
+                                <h3 class="title is-3">Function 8: Click+Before/After</h3>
+                                <p class="function8">When you click the button, it inserts hello before this paragraph and modafucka after.</p>
+                                <button class="button is-dark function_8">Dark</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="container is-fullhd box9-12">
+            <div class="notification">
+                <div class="columns is-flex">
+                    <div class="column">
+                        <div class="box">
+                            <div class="content">
+                                <h3 class="title is-3">Function 9: Click+Append</h3>
+                                <p class="function9">When you click the button, it appends the following message:</p>
+                                <button class="button is-dark function_9">Dark</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-flex">
+                        <div class="box">
+                            <div class="content">
+                                <h3 class="title is-3">Function 10: Click+html</h3>
+                                <p>It replaces the page with a blank one displaying: <strong>HELLO MODAFUCKA.</strong></p>
+                                <button class="button is-dark function_10">Dark</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-flex">
+                        <div class="box">
+                            <div class="content">
+                                <h3 class="title is-3">Function 11: Click+AttrValText</h3>
+                                <p class="function7">When you click the button, it change the site mode to primary.</p>
+                                <button class="button is-dark function_7">Dark</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </body>
 </html>
